@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kiddies</title>
+    <script>
+      window.onload = function() {
+        document.getElementById("first").onclick = function() {
+          var yellow = document.getElementById("yellow").value;
+          var color = "12";
+          if (yellow == color) {
+            swal("Kiddies Games says:", "YAAAAY, YOU GOT IT :)");
+          } else {
+            swal("Try again");
+          }
+        };
+
+        document.getElementById("second").onclick = function() {
+          var blue = document.getElementById("blue").value;
+          var colo = "2";
+          if (blue == colo) {
+            swal("Kiddies Games says:", "YAAAAY, YOU ARE A GENIUS :)");
+          } else {
+            swal("Don't give up, just try again");
+          }
+        };
+
+        document.getElementById("third").onclick = function() {
+          var yellow = document.getElementById("pink").value;
+          var color = "E";
+          if (yellow == color) {
+            swal("Kiddies Games says:", "YAAAAY, YOU ROCK BIGTIME");
+          } else {
+            swal("Awwww, just try once more");
+          }
+        };
+
+        document.getElementById("fourth").onclick = function() {
+          var yellow = document.getElementById("green").value;
+          var color = "aeiou";
+          if (yellow == color) {
+            swal("Kiddies Games says:", "YAAAAY, YOU ARE SUPER SMART");
+          } else {
+            swal("Try again");
+          }
+        };
+
+        document.getElementById("fifth").onclick = function() {
+          var yellow = document.getElementById("brown").value;
+          var color = "17";
+          if (yellow == color) {
+            swal("Kiddies Games says:", "YAAAAY, YOU ARE A STAR");
+          } else {
+            swal("Try again");
+          }
+        };
+
+        document.getElementById("sixth").onclick = function() {
+          var yellow = document.getElementById("black").value;
+          var color = "lion";
+          if (yellow == color) {
+            swal("Kiddies Games says:", "YAAAAY, YOU GOT IT :)");
+          } else {
+            swal("Try again :(");
+          }
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Kiddies Game</h1>
+    <p>Hello Super children, Guess the correct answer</p>
+    <div id="Questions">
+      <p>What is 5 + 7?</p>
+      <input type="text" id="yellow" />
+      <button id="first">Submit</button>
+      <p>
+        Lily has 3 apples, she saw her friend, Alexis and decided to give her
+        one apple, How many does lily have left?
+      </p>
+      <input type="text" id="blue" />
+      <button id="second">Submit</button>
+      <p>What is the next the alphabet. A. B, C, D,</p>
+      <input type="text" id="pink" />
+      <button id="third">Submit</button>
+      <p>Name the 5 vowels.</p>
+      <input type="text" id="green" />
+      <button id="fourth">Submit</button>
+      <p>What is 12 + 5?</p>
+      <input type="text" id="brown" />
+      <button id="fifth">Submit</button>
+
+      <p>What animal is called the King of the Jungle</p>
+      <input type="text" id="black" />
+      <button id="sixth">Submit</button>
+    </div>
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: linear-gradient(yellow, red, green);
+        font-family: "Roboto Slab", serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+      }
+      input {
+        margin-left: 550px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: gray;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+      }
+      button {
+        height: 30px;
+        border-radius: 8px;
+        color: red;
+      }
+    </style>
+  </body>
+</html>
